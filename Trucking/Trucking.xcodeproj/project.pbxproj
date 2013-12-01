@@ -19,6 +19,9 @@
 		71633DD8184A11E3004FD556 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71633DC0184A11E3004FD556 /* UIKit.framework */; };
 		71633DE0184A11E3004FD556 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71633DDE184A11E3004FD556 /* InfoPlist.strings */; };
 		71633DE2184A11E3004FD556 /* TruckingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71633DE1184A11E3004FD556 /* TruckingTests.m */; };
+		71A5872E184AFCF800A2B47E /* TRRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A5872D184AFCF800A2B47E /* TRRootViewController.m */; };
+		71A58730184AFEDE00A2B47E /* TRRootViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A5872F184AFEDE00A2B47E /* TRRootViewController_iPad.xib */; };
+		71A58732184AFEE400A2B47E /* TRRootViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A58731184AFEE400A2B47E /* TRRootViewController_iPhone.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		71633DDD184A11E3004FD556 /* TruckingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TruckingTests-Info.plist"; sourceTree = "<group>"; };
 		71633DDF184A11E3004FD556 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		71633DE1184A11E3004FD556 /* TruckingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TruckingTests.m; sourceTree = "<group>"; };
+		71A5872C184AFCF800A2B47E /* TRRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRRootViewController.h; sourceTree = "<group>"; };
+		71A5872D184AFCF800A2B47E /* TRRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRRootViewController.m; sourceTree = "<group>"; };
+		71A5872F184AFEDE00A2B47E /* TRRootViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRRootViewController_iPad.xib; sourceTree = "<group>"; };
+		71A58731184AFEE400A2B47E /* TRRootViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TRRootViewController_iPhone.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +114,8 @@
 		71633DC2184A11E3004FD556 /* Trucking */ = {
 			isa = PBXGroup;
 			children = (
+				71A5872A184AFCF800A2B47E /* Classes */,
+				71A58725184AFC3900A2B47E /* Resources */,
 				71633DCB184A11E3004FD556 /* TRAppDelegate.h */,
 				71633DCC184A11E3004FD556 /* TRAppDelegate.m */,
 				71633DCE184A11E3004FD556 /* Images.xcassets */,
@@ -142,6 +151,56 @@
 				71633DDE184A11E3004FD556 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71A58725184AFC3900A2B47E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				71A58726184AFC3900A2B47E /* xibs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		71A58726184AFC3900A2B47E /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				71A58727184AFC3900A2B47E /* iPad */,
+				71A58728184AFC3900A2B47E /* iPhone */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		71A58727184AFC3900A2B47E /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				71A5872F184AFEDE00A2B47E /* TRRootViewController_iPad.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		71A58728184AFC3900A2B47E /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				71A58731184AFEE400A2B47E /* TRRootViewController_iPhone.xib */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		71A5872A184AFCF800A2B47E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				71A5872B184AFCF800A2B47E /* Shared */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		71A5872B184AFCF800A2B47E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				71A5872C184AFCF800A2B47E /* TRRootViewController.h */,
+				71A5872D184AFCF800A2B47E /* TRRootViewController.m */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +281,8 @@
 			files = (
 				71633DC7184A11E3004FD556 /* InfoPlist.strings in Resources */,
 				71633DCF184A11E3004FD556 /* Images.xcassets in Resources */,
+				71A58730184AFEDE00A2B47E /* TRRootViewController_iPad.xib in Resources */,
+				71A58732184AFEE400A2B47E /* TRRootViewController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A5872E184AFCF800A2B47E /* TRRootViewController.m in Sources */,
 				71633DCD184A11E3004FD556 /* TRAppDelegate.m in Sources */,
 				71633DC9184A11E3004FD556 /* main.m in Sources */,
 			);
@@ -444,6 +506,7 @@
 				71633DE7184A11E3004FD556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71633DE8184A11E3004FD556 /* Build configuration list for PBXNativeTarget "TruckingTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +515,7 @@
 				71633DEA184A11E3004FD556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

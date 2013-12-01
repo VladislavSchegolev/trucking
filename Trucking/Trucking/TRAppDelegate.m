@@ -7,13 +7,26 @@
 //
 
 #import "TRAppDelegate.h"
+#import "TRRootViewController.h"
 
 @implementation TRAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    NSString *nibName = @"";
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        nibName = @"TRRootViewController_iPad";
+    } else {
+        nibName = @"TRRootViewController_iPhone";
+    }
+    
+    UIViewController *viewController = [[TRRootViewController alloc] initWithNibName:nibName bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    self.window.rootViewController = navController;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
